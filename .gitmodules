@@ -1,0 +1,3 @@
+[submodule "communication-ui-library-ios"]
+	path = communication-ui-library-ios
+	url = git@github.com:emlynmac/communication-ui-library-ios.git
