@@ -4,3 +4,6 @@
 [submodule "fluentui-apple"]
 	path = fluentui-apple
 	url = https://github.com/microsoft/fluentui-apple.git
+[submodule "azure-sdk-for-ios"]
+	path = azure-sdk-for-ios
+	url = https://github.com/emlynmac/azure-sdk-for-ios.git
