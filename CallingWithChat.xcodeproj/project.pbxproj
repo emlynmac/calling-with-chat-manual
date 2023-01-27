@@ -13,12 +13,59 @@
 		75F0EE1C29848623004FE07A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F0EE1B29848623004FE07A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		75F0EE2729848B9B004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8659FC52602A22000C807DE;
+			remoteInfo = AzureCommunicationUICalling;
+		};
+		75F0EE2929848B9B004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1FBCB69A2645285100F57EEA;
+			remoteInfo = AzureCommunicationUICallingTests;
+		};
+		75F0EE2B29848BBA004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A8659FC42602A22000C807DE;
+			remoteInfo = AzureCommunicationUICalling;
+		};
+		75F0EE3229848C6D004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50CB81C228C26E0C00680566;
+			remoteInfo = AzureCommunicationUIChat;
+		};
+		75F0EE3429848C6D004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50CB81CA28C26E0C00680566;
+			remoteInfo = AzureCommunicationUIChatTests;
+		};
+		75F0EE3629848C86004FE07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CB81C128C26E0C00680566;
+			remoteInfo = AzureCommunicationUIChat;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		75F0EE1129848620004FE07A /* CallingWithChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallingWithChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F0EE1429848620004FE07A /* CallingWithChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingWithChatApp.swift; sourceTree = "<group>"; };
 		75F0EE1629848620004FE07A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75F0EE1829848623004FE07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F0EE1B29848623004FE07A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationUICalling.xcodeproj; path = "communication-ui-library-ios/AzureCommunicationUI/sdk/AzureCommunicationUICalling/AzureCommunicationUICalling.xcodeproj"; sourceTree = "<group>"; };
+		75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationUIChat.xcodeproj; path = "communication-ui-library-ios/AzureCommunicationUI/sdk/AzureCommunicationUIChat/AzureCommunicationUIChat.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +82,8 @@
 		75F0EE0829848620004FE07A = {
 			isa = PBXGroup;
 			children = (
+				75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */,
+				75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */,
 				75F0EE1329848620004FE07A /* CallingWithChat */,
 				75F0EE1229848620004FE07A /* Products */,
 			);
@@ -67,6 +116,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		75F0EE2329848B9B004FE07A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75F0EE2829848B9B004FE07A /* AzureCommunicationUICalling.framework */,
+				75F0EE2A29848B9B004FE07A /* AzureCommunicationUICallingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75F0EE2E29848C6D004FE07A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75F0EE3329848C6D004FE07A /* AzureCommunicationUIChat.framework */,
+				75F0EE3529848C6D004FE07A /* AzureCommunicationUIChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +148,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				75F0EE3729848C86004FE07A /* PBXTargetDependency */,
+				75F0EE2C29848BBA004FE07A /* PBXTargetDependency */,
 			);
 			name = CallingWithChat;
 			productName = CallingWithChat;
@@ -113,12 +182,53 @@
 			mainGroup = 75F0EE0829848620004FE07A;
 			productRefGroup = 75F0EE1229848620004FE07A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75F0EE2329848B9B004FE07A /* Products */;
+					ProjectRef = 75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */;
+				},
+				{
+					ProductGroup = 75F0EE2E29848C6D004FE07A /* Products */;
+					ProjectRef = 75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				75F0EE1029848620004FE07A /* CallingWithChat */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75F0EE2829848B9B004FE07A /* AzureCommunicationUICalling.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AzureCommunicationUICalling.framework;
+			remoteRef = 75F0EE2729848B9B004FE07A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75F0EE2A29848B9B004FE07A /* AzureCommunicationUICallingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AzureCommunicationUICallingTests.xctest;
+			remoteRef = 75F0EE2929848B9B004FE07A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75F0EE3329848C6D004FE07A /* AzureCommunicationUIChat.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AzureCommunicationUIChat.framework;
+			remoteRef = 75F0EE3229848C6D004FE07A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75F0EE3529848C6D004FE07A /* AzureCommunicationUIChatTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AzureCommunicationUIChatTests.xctest;
+			remoteRef = 75F0EE3429848C6D004FE07A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75F0EE0F29848620004FE07A /* Resources */ = {
@@ -143,6 +253,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F0EE2C29848BBA004FE07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureCommunicationUICalling;
+			targetProxy = 75F0EE2B29848BBA004FE07A /* PBXContainerItemProxy */;
+		};
+		75F0EE3729848C86004FE07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureCommunicationUIChat;
+			targetProxy = 75F0EE3629848C86004FE07A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		75F0EE1D29848623004FE07A /* Debug */ = {
