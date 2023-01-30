@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7503AC4429882F150029ED2C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503AC4329882F150029ED2C /* ContentViewModel.swift */; };
 		75B06F96298498B5002219CB /* libFluentUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE4129848F01004FE07A /* libFluentUI.a */; };
 		75B06F9F2984996C002219CB /* FluentUIResources-ios.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75F0EE3F29848F01004FE07A /* FluentUIResources-ios.bundle */; };
 		75F0EE1529848620004FE07A /* CallingWithChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F0EE1429848620004FE07A /* CallingWithChatApp.swift */; };
@@ -160,6 +161,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7503AC4329882F150029ED2C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		75F0EE1129848620004FE07A /* CallingWithChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallingWithChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F0EE1429848620004FE07A /* CallingWithChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingWithChatApp.swift; sourceTree = "<group>"; };
 		75F0EE1629848620004FE07A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				75F0EE1429848620004FE07A /* CallingWithChatApp.swift */,
 				75F0EE1629848620004FE07A /* ContentView.swift */,
+				7503AC4329882F150029ED2C /* ContentViewModel.swift */,
 				75F0EE1829848623004FE07A /* Assets.xcassets */,
 				75F0EE1A29848623004FE07A /* Preview Content */,
 			);
@@ -499,6 +502,7 @@
 			files = (
 				75F0EE1729848620004FE07A /* ContentView.swift in Sources */,
 				75F0EE1529848620004FE07A /* CallingWithChatApp.swift in Sources */,
+				7503AC4429882F150029ED2C /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +666,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CallingWithChat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required to have a video call";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required to have a voice call";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -690,6 +696,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CallingWithChat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required to have a video call";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required to have a voice call";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -6,21 +6,62 @@
 //
 
 import SwiftUI
+import AzureCommunicationUIChat
+import AzureCommunicationUICalling
 
 struct ContentView: View {
+
+    @ObservedObject var contentViewModel: ContentViewModel
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            chatView
+                .navigationTitle("Chat")
+                .navigationBarTitleDisplayMode(.inline)
+                .tag("Chat")
+                .tabItem {
+                    Image(systemName: "message.fill")
+                    Text("Chat")
+                }
+            callingView
+                .navigationTitle("Calling")
+                .navigationBarTitleDisplayMode(.inline)
+                .tag("Calling")
+                .tabItem {
+                    Image(systemName: "video.bubble.left.fill")
+                    Text("Calling")
+                }
+        }
+        .task {
+            await contentViewModel.createChatAdapter()
         }
         .padding()
+    }
+
+    private var chatView: some View {
+        VStack {
+            if let adapter = self.contentViewModel.chatAdapter {
+                ChatCompositeView(with: adapter)
+            } else {
+                EmptyView()
+            }
+        }
+    }
+
+    private var callingView: some View {
+        VStack {
+            Button("Start Call") {
+                contentViewModel.startVideoCall()
+            }
+        }
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(
+            contentViewModel: ContentViewModel()
+        )
     }
 }

@@ -11,7 +11,9 @@ import SwiftUI
 struct CallingWithChatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                contentViewModel: ContentViewModel()
+            )
         }
     }
 }
