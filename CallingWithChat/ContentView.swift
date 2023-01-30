@@ -34,6 +34,7 @@ struct ContentView: View {
         }
         .task {
             await contentViewModel.createChatAdapter()
+            contentViewModel.startVideoCall()
         }
         .padding()
     }
@@ -50,11 +51,15 @@ struct ContentView: View {
 
     private var callingView: some View {
         VStack {
-            Button("Start Call") {
-                contentViewModel.startVideoCall()
+//            Button("Start Call") {
+//                contentViewModel.startVideoCall()
+//            }
+            if let callVc = self.contentViewModel.callViewController {
+                CallView(hostedViewController: callVc)
+            } else {
+                EmptyView()
             }
         }
-
     }
 }
 

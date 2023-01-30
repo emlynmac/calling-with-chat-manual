@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 import AzureCommunicationUIChat
 import AzureCommunicationUICalling
@@ -13,6 +14,7 @@ import AzureCommunicationCommon
 
 class ContentViewModel: ObservableObject {
     @Published var chatAdapter: ChatAdapter?
+    @Published var callViewController: UIViewController?
 
     private let endpoint = "<ACS_ENDPOINT>"
     private let identifier = "<IDENTIFIER"
@@ -39,12 +41,15 @@ class ContentViewModel: ObservableObject {
 
     func startVideoCall() {
         let composite = CallComposite()
-        composite.launch(
+        let vc = composite.getViewController(
             remoteOptions: RemoteOptions(
                 for: .groupCall(groupId: groupCallId),
                 credential: try! CommunicationTokenCredential(token: token),
-                displayName: "Test here"
+                displayName: "Display Name"
             )
         )
+        Task { @MainActor in
+            self.callViewController = vc
+        }
     }
 }
