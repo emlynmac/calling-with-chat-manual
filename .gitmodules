@@ -1,6 +1,6 @@
 [submodule "communication-ui-library-ios"]
 	path = communication-ui-library-ios
-	url = git@github.com:emlynmac/communication-ui-library-ios.git
+	url = https://github.com/emlynmac/communication-ui-library-ios.git
 [submodule "fluentui-apple"]
 	path = fluentui-apple
 	url = https://github.com/microsoft/fluentui-apple.git
