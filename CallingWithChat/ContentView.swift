@@ -51,9 +51,6 @@ struct ContentView: View {
 
     private var callingView: some View {
         VStack {
-//            Button("Start Call") {
-//                contentViewModel.startVideoCall()
-//            }
             if let callVc = self.contentViewModel.callViewController {
                 CallView(hostedViewController: callVc)
             } else {
