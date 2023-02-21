@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7503AC4429882F150029ED2C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503AC4329882F150029ED2C /* ContentViewModel.swift */; };
 		7503AC5429884ABC0029ED2C /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503AC5329884ABC0029ED2C /* CallView.swift */; };
+		7592EBE429A55A180094D848 /* AzureCommunicationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7592EBD829A557390094D848 /* AzureCommunicationChat.framework */; };
+		7592EBE529A55A180094D848 /* AzureCommunicationChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7592EBD829A557390094D848 /* AzureCommunicationChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75B06F96298498B5002219CB /* libFluentUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE4129848F01004FE07A /* libFluentUI.a */; };
 		75B06F9F2984996C002219CB /* FluentUIResources-ios.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75F0EE3F29848F01004FE07A /* FluentUIResources-ios.bundle */; };
 		75ECD83729A54E48000CBA7C /* AzureCommunicationCalling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE4729849246004FE07A /* AzureCommunicationCalling.xcframework */; };
@@ -174,6 +176,7 @@
 				75ECD84329A54E9A000CBA7C /* AzureCommunicationUICalling.framework in Embed Frameworks */,
 				75ECD83829A54E48000CBA7C /* AzureCommunicationCalling.xcframework in Embed Frameworks */,
 				75ECD83F29A54E73000CBA7C /* AzureCore.framework in Embed Frameworks */,
+				7592EBE529A55A180094D848 /* AzureCommunicationChat.framework in Embed Frameworks */,
 				75ECD84529A54E9A000CBA7C /* AzureCommunicationUIChat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -192,7 +195,7 @@
 		75F0EE2229848B9B004FE07A /* AzureCommunicationUICalling.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationUICalling.xcodeproj; path = "communication-ui-library-ios/AzureCommunicationUI/sdk/AzureCommunicationUICalling/AzureCommunicationUICalling.xcodeproj"; sourceTree = "<group>"; };
 		75F0EE2D29848C6D004FE07A /* AzureCommunicationUIChat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationUIChat.xcodeproj; path = "communication-ui-library-ios/AzureCommunicationUI/sdk/AzureCommunicationUIChat/AzureCommunicationUIChat.xcodeproj"; sourceTree = "<group>"; };
 		75F0EE3829848F01004FE07A /* FluentUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FluentUI.xcodeproj; path = "fluentui-apple/ios/FluentUI.xcodeproj"; sourceTree = "<group>"; };
-		75F0EE4729849246004FE07A /* AzureCommunicationCalling.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AzureCommunicationCalling.xcframework; path = CallingWithChat/AzureCommunicationCalling.xcframework; sourceTree = "<group>"; };
+		75F0EE4729849246004FE07A /* AzureCommunicationCalling.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AzureCommunicationCalling.xcframework; sourceTree = "<group>"; };
 		75F0EE49298492A4004FE07A /* AzureCommunicationChat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationChat.xcodeproj; path = "azure-sdk-for-ios/sdk/communication/AzureCommunicationChat/AzureCommunicationChat.xcodeproj"; sourceTree = "<group>"; };
 		75F0EE5729849689004FE07A /* AzureCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCore.xcodeproj; path = "azure-sdk-for-ios/sdk/core/AzureCore/AzureCore.xcodeproj"; sourceTree = "<group>"; };
 		75F0EE62298496E3004FE07A /* AzureCommunicationCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCommunicationCommon.xcodeproj; path = "azure-sdk-for-ios/sdk/communication/AzureCommunicationCommon/AzureCommunicationCommon.xcodeproj"; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 				75ECD83C29A54E73000CBA7C /* AzureCommunicationCommon.framework in Frameworks */,
 				75B06F96298498B5002219CB /* libFluentUI.a in Frameworks */,
 				75ECD84229A54E9A000CBA7C /* AzureCommunicationUICalling.framework in Frameworks */,
+				7592EBE429A55A180094D848 /* AzureCommunicationChat.framework in Frameworks */,
 				75ECD83E29A54E73000CBA7C /* AzureCore.framework in Frameworks */,
 				75ECD83729A54E48000CBA7C /* AzureCommunicationCalling.xcframework in Frameworks */,
 			);
